@@ -2,6 +2,9 @@
 <html>
 <head>
 <title>某社区《战国兰斯》专区</title>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+</script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -134,6 +137,18 @@ li a:hover, .dropdown:hover, .dropbtn {
     }
 }
 </style>
+<script>
+$(document).ready(function(){
+  $("#p1").mousedown(function(){
+    alert("未完善，敬请期待！");
+  });
+});
+$(document).ready(function(){
+  $("#p2").mousedown(function(){
+    alert("未完善，敬请期待！");
+  });
+});
+</script>
 </head>
 <BODY BACKGROUND="img/back1.jpg">
   <div class="header">
@@ -157,18 +172,17 @@ li a:hover, .dropdown:hover, .dropbtn {
 
 <ul>
   <li><a class="intro" href="r7.html">简介</a></li>
-  <li><a href="#rance">谁是兰斯？</a></li>
-  <li><a href="#artic">心得攻略</a></li>
-  <li><a href="003.html">注册</a></li>
-  <li><a href="#">登录</a></li>
+  <li id="p1"><a href="#rance">谁是兰斯？</a></li>
+  <li id="p2"><a href="#artic">心得攻略</a></li>
+  <li><a href="form.html">注册</a></li>
   <div class="dropdown">
     <a href="#" class="dropbtn">登场角色、势力信息</a>
     <div class="dropdown-content">
       <a href="zhitinajia.html">织田家</a>
-      <a href="#">上杉家</a>
-      <a href="#">足利家</a>
-      <a href="#">原家</a>
-      <a href="#">伊贺家</a>
+      <a href="zhitinajia.html">上杉家</a>
+      <a href="zhitinajia.html">足利家</a>
+      <a href="zhitinajia.html">原家</a>
+      <a href="zhitinajia.html">伊贺家</a>
     </div>
   </div>
 </ul>
